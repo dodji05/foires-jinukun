@@ -1,56 +1,29 @@
 <section class="home-slider position-relative mb-30">
     <div class="container">
         <div class="home-slide-cover mt-30">
-            <div class="hero-slider-1 style-4 dot-style-1 dot-style-1-position-1 slick-initialized slick-slider slick-dotted">
-                <div class="slick-list draggable">
-                    <div class="slick-track" style="opacity: 1; width: 2574px;">
-                        <div class="single-hero-slider single-animation-wrap slick-slide slick-current slick-active"
-                             style="background-image: url('assets/imgs/slider/slider-1.jpg'); width: 1287px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;"
-                             data-slick-index="0" aria-hidden="false" tabindex="0" role="tabpanel"
-                             id="slick-slide00" aria-describedby="slick-slide-control00">
-                            <div class="slider-content">
-                                <h1 class="display-2 mb-40">
-                                    Bienvenue à la foire<br>
-                                    TIWA de Jinukun
-                                </h1>
-                                <p class="mb-65">Découvrez les produits de la foire</p>
-
-                            </div>
-                        </div>
-                        <div class="single-hero-slider single-animation-wrap slick-slide"
-                             style="background-image: url('assets/imgs/slider/slide-2.jpg'); width: 1287px; position: relative; left: -1287px; top: 0px;
-                            z-index: 998; opacity: 0; transition: opacity 500ms ease 0s;" data-slick-index="1"
-                             aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide01"
-                             aria-describedby="slick-slide-control01">
-                            <div class="slider-content">
-                                <h1 class="display-2 mb-40">
-                                    Fresh Vegetables<br>
-                                    Big discount
-                                </h1>
-                                <p class="mb-65">Save up to 50% off on your first order</p>
-
-                            </div>
-                        </div>
+            <div class="hero-slider-1 style-4 dot-style-1 dot-style-1-position-1">
+                <div class="single-hero-slider single-animation-wrap" style="background-image: url({{ asset('assets/imgs/slider/slider-1.jpg') }})">
+                    <div class="slider-content">
+                        <h1 class="display-2 mb-40">
+                            Bienvenue à la foire<br>
+                            TIWA de Jinukun
+                        </h1>
+                        <p class="mb-65">Découvrez les produits de la foire</p>
+                        <a href="#" class="btn float-end mr-180" style="font-size: 1.3em">Découvrir</a>
                     </div>
                 </div>
-
-                <ul class="slick-dots" style="" role="tablist">
-                    <li class="slick-active" role="presentation">
-                        <button type="button" role="tab" id="slick-slide-control00" aria-controls="slick-slide00"
-                                aria-label="1 of 2" tabindex="0" aria-selected="true">1
-                        </button>
-                    </li>
-                    <li role="presentation" class="">
-                        <button type="button" role="tab" id="slick-slide-control01" aria-controls="slick-slide01"
-                                aria-label="2 of 2" tabindex="-1">2
-                        </button>
-                    </li>
-                </ul>
+                <div class="single-hero-slider single-animation-wrap" style="background-image: url({{ asset('assets/imgs/slider/slider-2.jpg') }})">
+                    <div class="slider-content">
+                        <h1 class="display-2 mb-40">
+                            Fresh Vegetables<br />
+                            Big discount
+                        </h1>
+                        <p class="mb-65">Découvrez les produits de la foire</p>
+                        <a href="#" class="btn float-end mr-180" style="font-size: 1.3em">Découvrir</a>
+                    </div>
+                </div>
             </div>
-            <div class="slider-arrow hero-slider-1-arrow"><span class="slider-btn slider-prev slick-arrow" style=""><i
-                            class="fi-rs-angle-left"></i></span><span class="slider-btn slider-next slick-arrow"
-                                                                      style=""><i class="fi-rs-angle-right"></i></span>
-            </div>
+            <div class="slider-arrow hero-slider-1-arrow"></div>
         </div>
     </div>
 </section>

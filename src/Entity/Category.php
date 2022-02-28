@@ -34,9 +34,15 @@ class Category
      */
     private $produits;
 
+    /**
+     * @ORM\OneToMany(targetEntity=SousCategory::class, mappedBy="category")
+     */
+    private $sousCategories;
+
     public function __construct()
     {
         $this->produits = new ArrayCollection();
+        $this->sousCategories = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -92,6 +98,36 @@ class Category
             // set the owning side to null (unless already changed)
             if ($produit->getCategories() === $this) {
                 $produit->setCategories(null);
+            }
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, SousCategory>
+     */
+    public function getSousCategories(): Collection
+    {
+        return $this->sousCategories;
+    }
+
+    public function addSousCategory(SousCategory $sousCategory): self
+    {
+        if (!$this->sousCategories->contains($sousCategory)) {
+            $this->sousCategories[] = $sousCategory;
+            $sousCategory->setCategory($this);
+        }
+
+        return $this;
+    }
+
+    public function removeSousCategory(SousCategory $sousCategory): self
+    {
+        if ($this->sousCategories->removeElement($sousCategory)) {
+            // set the owning side to null (unless already changed)
+            if ($sousCategory->getCategory() === $this) {
+                $sousCategory->setCategory(null);
             }
         }
 

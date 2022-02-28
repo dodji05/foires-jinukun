@@ -12,7 +12,7 @@
     <meta property="og:url" content="" />
     <meta property="og:image" content="" />
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/imgs/theme/favicon.svg') }}" />
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/imgs/theme/favicon.png') }}" />
     <!-- Template CSS -->
     <link rel="stylesheet" href="{{ asset('assets/css/plugins/animate.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}" />
@@ -35,13 +35,13 @@
             <div class="container">
                 <div class="header-wrap">
                     <div class="logo logo-width-1">
-                        <a href="{{ path('app_accueil') }}"><img src="assets/imgs/theme/logo.svg" alt="logo"></a>
+                        <a href="{{ path('app_accueil') }}"><img src="{{ asset('assets/imgs/theme/logo-jinukun.png') }}" alt="logo"></a>
                     </div>
                     <div class="header-right">
                         <div class="search-style-2">
                             <form action="#">
                                 <select class="select-active select2-hidden-accessible" data-select2-id="1" tabindex="-1" aria-hidden="true">
-                                    <option data-select2-id="3">All Categories</option>
+                                    <option data-select2-id="3">Toutes les catégories</option>
                                     <option>Milks and Dairies</option>
                                     <option>Wines &amp; Alcohol</option>
                                     <option>Clothing &amp; Beauty</option>
@@ -105,7 +105,7 @@
             <div class="container">
                 <div class="header-wrap header-space-between position-relative">
                     <div class="logo logo-width-1 d-block d-lg-none">
-                        <a href="{{ path('app_accueil') }}"><img src="assets/imgs/theme/logo.svg" alt="logo"></a>
+                        <a href="{{ path('app_accueil') }}"><img src="{{ asset('assets/imgs/theme/logo-jinukun.png') }}" alt="logo"></a>
                     </div>
                     <div class="header-nav d-none d-lg-flex">
                         <div class="main-categori-wrap d-none d-lg-block">
@@ -182,7 +182,7 @@
                                     <li>
                                         <a href="{{ path('about') }}">Qui sommes-nous?</a></li>
                                     <li>
-                                        <a href="">Les Exposants</a>
+                                        <a href="{{ path('app_exposant') }}">Les Exposants</a>
                                     </li>
                                     <li class="position-static">
                                         <a href="#">Mega menu <i class="fi-rs-angle-down"></i></a>
@@ -255,7 +255,7 @@
                     </div>
                     <div class="hotline d-none d-lg-flex">
                         <img src="{{ asset('assets/imgs/theme/icons/icon-headphone.svg') }}" alt="contact">
-                        <p>+229 9655-0455<span>24/7 Service client</span></p>
+                        <p>+229 96550455<span>24/7 Service client</span></p>
                     </div>
 
                     <div class="header-action-icon-2 d-block d-lg-none">
@@ -326,7 +326,7 @@
         <div class="mobile-header-wrapper-inner">
             <div class="mobile-header-top">
                 <div class="mobile-header-logo">
-                    <a href="{{ path('app_accueil') }}"><img src="assets/imgs/theme/logo.svg" alt="logo"></a>
+                    <a href="{{ path('app_accueil') }}"><img src="{{ asset('assets/imgs/theme/logo-jinukun.png') }}" alt="logo"></a>
                 </div>
                 <div class="mobile-menu-close close-style-wrap close-style-position-inherit">
                     <button class="close-style search-close">
@@ -512,14 +512,11 @@
                         <div class="position-relative newsletter-inner">
                             <div class="newsletter-content">
                                 <h2 class="mb-20">
-                                    Restez à la maison et obtenez votre quotidien <br>
-                                    besoins de notre boutique
+                                    Restez chez vous et faîtes vos achats <br>
+                                    dans notre boutique en ligne.
                                 </h2>
-                                <p class="mb-45">Commencez vos achats quotidiens avec <span class="text-brand">Jinukun</span></p>
-                                <form class="form-subcriber d-flex">
-                                    <input type="email" placeholder="Votre adresse email">
-                                    <button class="btn" type="submit">S'abonner</button>
-                                </form>
+                                <p class="mb-45">Commencez vos achats quotidiens avec <span class="text-brand">Jinukun Store</span></p>
+                                <a href="https://store.jinukun.bj" class="btn btn-lg ml-150" style="font-size: 2.1em" target="_blank">Visitez Jinukun Store</a>
                             </div>
                             <img src="{{ asset('assets/imgs/banner/banner-13.png')}}" alt="newsletter">
                         </div>
@@ -530,45 +527,44 @@
         <section class="section-padding footer-mid">
             <div class="container pt-15 pb-20">
                 <div class="row">
-
                     <div class="footer-link-widget col">
                         <h4 class="widget-title">Jinukun</h4>
                         <ul class="footer-list mb-sm-5 mb-md-0">
                             <li><a href="#">Qui sommes-nous?</a></li>
-                            <li><a href="#">Delivery Information</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Informations de livraison</a></li>
+                            <li><a href="#">Politique de confidentialité</a></li>
                             <li><a href="#">Conditions Générale d'utilisation</a></li>
                             <li><a href="#">Contact</a></li>
-                            <li><a href="#">Support Center</a></li>
-                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Centre de soutien</a></li>
+                            <li><a href="#">Carrières</a></li>
                         </ul>
                     </div>
                     <div class="footer-link-widget col">
-                        <h4 class="widget-title">Account</h4>
+                        <h4 class="widget-title">Compte</h4>
                         <ul class="footer-list mb-sm-5 mb-md-0">
-                            <li><a href="#">Sign In</a></li>
-                            <li><a href="#">View Cart</a></li>
-                            <li><a href="#">My Wishlist</a></li>
-                            <li><a href="#">Track My Order</a></li>
-                            <li><a href="#">Help Ticket</a></li>
-                            <li><a href="#">Shipping Details</a></li>
-                            <li><a href="#">Compare products</a></li>
+                            <li><a href="#">S'identifier</a></li>
+                            <li><a href="#">Voir le panier</a></li>
+                            <li><a href="#">Ma liste de souhaits</a></li>
+                            <li><a href="#">Suivre ma commande</a></li>
+                            <li><a href="#">Billet d'aide</a></li>
+                            <li><a href="#">Les détails d'expédition</a></li>
+                            <li><a href="#">Comparer les produits</a></li>
                         </ul>
                     </div>
                     <div class="footer-link-widget col">
-                        <h4 class="widget-title">Corporate</h4>
+                        <h4 class="widget-title">Entreprise</h4>
                         <ul class="footer-list mb-sm-5 mb-md-0">
-                            <li><a href="#">Become a Vendor</a></li>
-                            <li><a href="#">Affiliate Program</a></li>
-                            <li><a href="#">Farm Business</a></li>
-                            <li><a href="#">Farm Careers</a></li>
-                            <li><a href="#">Our Suppliers</a></li>
-                            <li><a href="#">Accessibility</a></li>
+                            <li><a href="#">Devenez vendeur</a></li>
+                            <li><a href="#">Programme d'affiliation</a></li>
+                            <li><a href="#">Entreprise agricole</a></li>
+                            <li><a href="#">Carrières à la ferme</a></li>
+                            <li><a href="#">Nos fournisseurs</a></li>
+                            <li><a href="#">Accessibilité</a></li>
                             <li><a href="#">Promotions</a></li>
                         </ul>
                     </div>
                     <div class="footer-link-widget col">
-                        <h4 class="widget-title">Popular</h4>
+                        <h4 class="widget-title">Populaire</h4>
                         <ul class="footer-list mb-sm-5 mb-md-0">
                             <li><a href="#">Milk &amp; Flavoured Milk</a></li>
                             <li><a href="#">Butter and Margarine</a></li>
@@ -581,7 +577,7 @@
                     </div>
                     <div class="footer-link-widget widget-install-app col">
                         <h4 class="widget-title">Install App</h4>
-                        <p class="wow fadeIn animated animated" style="visibility: visible;">From App Store or Google Play</p>
+                        <p class="wow fadeIn animated animated" style="visibility: visible;">Depuis App Store ou Google Play</p>
                         <div class="download-app">
                             <a href="#" class="hover-up mb-sm-2 mb-lg-0"><img class="active" src="assets/imgs/theme/app-store.jpg" alt=""></a>
                             <a href="#" class="hover-up mb-sm-2"><img src="assets/imgs/theme/google-play.jpg" alt=""></a>
@@ -598,7 +594,7 @@
                     <div class="footer-bottom"></div>
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-6">
-                    <p class="font-sm mb-0">© 2021, <strong class="text-brand">Foire  </strong> - Jinukun <br>Tout droit reserve</p>
+                    <p class="font-sm mb-0">© 2022, <strong class="text-brand">Foire  </strong> - Jinukun <br>Tout droit reservé</p>
                 </div>
                 <div class="col-xl-4 col-lg-6 text-center d-none d-xl-block">
 
@@ -643,7 +639,8 @@
 <!-- Template  JS -->
 <script src="{{ asset('assets/js/main.js')}}"></script>
 <script src="{{ asset('assets/js/shop.js')}}"></script>
+
 {% block javascripts %}
-    {#{{ encore_entry_script_tags('app') }}#}
+
 {% endblock %}
 </html>

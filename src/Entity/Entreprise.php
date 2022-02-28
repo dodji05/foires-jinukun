@@ -64,6 +64,26 @@ class Entreprise
      */
     private $utlisateur;
 
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $banniere;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $localisation;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $contact;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $pageFaceBook;
+
     public function __construct()
     {
         $this->produits = new ArrayCollection();
@@ -201,6 +221,54 @@ class Entreprise
         }
 
         $this->utlisateur = $utlisateur;
+
+        return $this;
+    }
+
+    public function getBanniere(): ?string
+    {
+        return $this->banniere;
+    }
+
+    public function setBanniere(string $banniere): self
+    {
+        $this->banniere = $banniere;
+
+        return $this;
+    }
+
+    public function getLocalisation(): ?string
+    {
+        return $this->localisation;
+    }
+
+    public function setLocalisation(string $localisation): self
+    {
+        $this->localisation = $localisation;
+
+        return $this;
+    }
+
+    public function getContact(): ?string
+    {
+        return $this->contact;
+    }
+
+    public function setContact(string $contact): self
+    {
+        $this->contact = $contact;
+
+        return $this;
+    }
+
+    public function getPageFaceBook(): ?string
+    {
+        return $this->pageFaceBook;
+    }
+
+    public function setPageFaceBook(string $pageFaceBook): self
+    {
+        $this->pageFaceBook = $pageFaceBook;
 
         return $this;
     }

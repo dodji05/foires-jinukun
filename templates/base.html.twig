@@ -14,6 +14,7 @@
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/imgs/theme/favicon.svg') }}" />
     <!-- Template CSS -->
+    <link rel="stylesheet" href="{{ asset('assets/css/plugins/animate.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}" />
     <title>{% block title %}Bienvenue!{% endblock %}</title>
 
@@ -175,19 +176,13 @@
                         <div class="main-menu main-menu-padding-1 main-menu-lh-2 d-none d-lg-block font-heading">
                             <nav>
                                 <ul>
-
                                     <li>
                                         <a class="active" href="{{ path('app_accueil') }}"> Accueil</a>
-
                                     </li>
                                     <li>
                                         <a href="{{ path('about') }}">Qui sommes-nous?</a></li>
                                     <li>
                                         <a href="">Les Exposants</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="{{ path('contact') }}">Contact</a>
                                     </li>
                                     <li class="position-static">
                                         <a href="#">Mega menu <i class="fi-rs-angle-down"></i></a>
@@ -251,13 +246,16 @@
                                             </li>
                                         </ul>
                                     </li>
+                                    <li>
+                                        <a href="{{ path('contact') }}">Contact</a>
+                                    </li>
                                 </ul>
                             </nav>
                         </div>
                     </div>
                     <div class="hotline d-none d-lg-flex">
                         <img src="{{ asset('assets/imgs/theme/icons/icon-headphone.svg') }}" alt="contact">
-                        <p>1900 - 888<span>24/7 Support Center</span></p>
+                        <p>+229 9655-0455<span>24/7 Service client</span></p>
                     </div>
 
                     <div class="header-action-icon-2 d-block d-lg-none">
@@ -534,13 +532,13 @@
                 <div class="row">
 
                     <div class="footer-link-widget col">
-                        <h4 class="widget-title">Company</h4>
+                        <h4 class="widget-title">Jinukun</h4>
                         <ul class="footer-list mb-sm-5 mb-md-0">
-                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Qui sommes-nous?</a></li>
                             <li><a href="#">Delivery Information</a></li>
                             <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Terms &amp; Conditions</a></li>
-                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Conditions Générale d'utilisation</a></li>
+                            <li><a href="#">Contact</a></li>
                             <li><a href="#">Support Center</a></li>
                             <li><a href="#">Careers</a></li>
                         </ul>

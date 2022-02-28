@@ -1,0 +1,122 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <main class="main pages">
+        <div class="page-header breadcrumb-wrap">
+            <div class="container">
+                <div class="breadcrumb">
+                    <a href="{{ path('app_accueil') }}" rel="nofollow"><i class="fi-rs-home mr-5"></i>Accueil</a>
+                    <span></span> Qui sommes-nous?
+                </div>
+            </div>
+        </div>
+        <div class="page-content pt-50">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-10 col-lg-12 m-auto">
+                        <section class="row align-items-center mb-50">
+                            <div class="col-lg-6">
+                                <img src="{{ asset('assets/imgs/page/about-1.png') }}" alt=""
+                                     class="border-radius-15 mb-md-3 mb-lg-0 mb-sm-4"/>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="pl-25">
+                                    <h2 class="mb-30">Bienvenue chez Jinukun</h2>
+                                    <p class="mb-25">Jinukun est une startup AgriTech (utilisation de la technologie
+                                        dans l'agriculture). Tel qu’indiqué par sa mission “Nourrir l’Afrique avec ses
+                                        propres produits”, elle met la qualité des produits et l’économie locale au
+                                        centre de toutes ses activités. Jinukun utilise les technologies pour améliorer
+                                        le quotidien des populations au Bénin. Depuis sa création, Jinukun a lancé
+                                        plusieurs projets dans le cadre de ses activités. </p>
+                                    <p class="mb-50">Nous offrons deux principaux services dont l’objectif est centré
+                                        sur l’accessibilité des produits agroalimentaires locaux et de ferme,
+                                        l’amélioration des conditions de vie et de travail des fermiers et des
+                                        agriculteurs locaux.</p>
+                                    <div class="carausel-3-columns-cover position-relative">
+                                        <div id="carausel-3-columns-arrows"></div>
+                                        <div class="carausel-3-columns" id="carausel-3-columns">
+                                            <img src="{{ asset('assets/imgs/page/about-2.png') }}" alt=""/>
+                                            <img src="{{ asset('assets/imgs/page/about-3.png') }}" alt=""/>
+                                            <img src="{{ asset('assets/imgs/page/about-4.png') }}" alt=""/>
+                                            <img src="{{ asset('assets/imgs/page/about-2.png') }}" alt=""/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="text-center mb-50">
+                            <h2 class="title style-3 mb-40">Qu'est-ce que nous fournissons?</h2>
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 mb-24">
+                                    <div class="featured-card">
+                                        <img src="{{ asset('assets/imgs/theme/icons/icon-1.svg') }}" alt=""/>
+                                        <h4>Jinukun Store</h4>
+                                        <p>Plateforme de vente en ligne de produits agroalimentaires et produits des
+                                            fermes locaux accompagné d’un service de livraison</p>
+                                        <a href="https://store.jinukun.bj">En savoir plus</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 mb-24">
+                                    <div class="featured-card">
+                                        <img src="{{ asset('assets/imgs/theme/icons/icon-2.svg') }}" alt=""/>
+                                        <h4>Jinukun Farmers</h4>
+                                        <p>Nous apportons une solution de gestion et de mise en marché aux producteurs
+                                            Béninois</p>
+                                        <a href="https://store.jinukun.bj/farmers">En savoir plus</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 mb-24">
+                                    <div class="featured-card">
+                                        <img src="assets/imgs/theme/icons/icon-3.svg" alt=""/>
+                                        <h4>AgriConseils</h4>
+                                        <p>A travers cette plateforme, divers services agricoles sont proposées aux
+                                            acteurs du secteur agropastorale ou aux individus désireux de se lancer dans
+                                            ce secteur</p>
+                                        <a href="https://agriconseils.jinukun.bj">En savoir plus</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="row align-items-center mb-50">
+                            <div class="row mb-50 align-items-center">
+                                <div class="col-lg-7 pr-30">
+                                    <img src="assets/imgs/page/about-5.png" alt="" class="mb-md-3 mb-lg-0 mb-sm-4"/>
+                                </div>
+                                <div class="col-lg-5">
+                                    <h4 class="mb-20 text-muted"></h4>
+                                    <h1 class="heading-1 mb-40">Votre partenaire pour la solution d'épicerie
+                                        e-commerce</h1>
+                                    <p class="mb-30">Nous offrons aux consommateurs Béninois la possibilité de commander
+                                        les produits des éleveurs ou agriculteurs ou transformateurs locaux</p>
+                                    <p> Jinukun Store est un véritable hypermarché en ligne le consommateur visite les
+                                        rayons, fait son panier en produits agroalimentaires locaux et se faire livrer
+                                        où il le veut</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4 pr-30 mb-md-5 mb-lg-0 mb-sm-5">
+                                    <h3 class="mb-30">Qui sommes-nous?</h3>
+                                    <p>Volutpat diam ut venenatis tellus in metus. Nec dui nunc mattis enim ut tellus
+                                        eros donec ac odio orci ultrices in. ellus eros donec ac odio orci ultrices
+                                        in.</p>
+                                </div>
+                                <div class="col-lg-4 pr-30 mb-md-5 mb-lg-0 mb-sm-5">
+                                    <h3 class="mb-30">Notre histoire</h3>
+                                    <p>Volutpat diam ut venenatis tellus in metus. Nec dui nunc mattis enim ut tellus
+                                        eros donec ac odio orci ultrices in. ellus eros donec ac odio orci ultrices
+                                        in.</p>
+                                </div>
+                                <div class="col-lg-4">
+                                    <h3 class="mb-30">Notre mission</h3>
+                                    <p>Volutpat diam ut venenatis tellus in metus. Nec dui nunc mattis enim ut tellus
+                                        eros donec ac odio orci ultrices in. ellus eros donec ac odio orci ultrices
+                                        in.</p>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+{% endblock %}
